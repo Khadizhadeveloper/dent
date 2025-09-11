@@ -1,0 +1,12 @@
+/* Кастомные стили для админки */
+.badge {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+/* Иконки статусов */
+.status-pending { background-color: #ffc107; color: #000; }
+.status-confirmed { background-color: #198754; color: #fff; }
+.status-cancelled { background-color: #dc3545; color: #fff; }
+.status-completed { background-color: #0dcaf0; color: #000; }

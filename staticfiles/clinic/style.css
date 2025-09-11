@@ -1,0 +1,235 @@
+/* ==============================
+   Общие стили для стоматологии
+   ============================== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Контейнер */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* ==============================
+   Кнопки
+   ============================== */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #1f1f1f;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: var(--white);
+    padding: 10px 20px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border: none;
+    color: var(--white);
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #212529;
+    padding: 6px 12px;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* ==============================
+   Модальные окна
+   ============================== */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.modal-body input,
+.modal-body select,
+.modal-body textarea {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.modal-body input:focus,
+.modal-body select:focus,
+.modal-body textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(44, 44, 44, 0.2);
+}
+
+/* ==============================
+   Карточки
+   ============================== */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* ==============================
+   Сообщения
+   ============================== */
+#message {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    display: none;
+    min-width: 300px;
+    text-align: center;
+}
+
+#message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* ==============================
+   Navbar
+   ============================== */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--white);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #b0b0b0;
+}
+
+/* ==============================
+   Адаптивность
+   ============================== */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* ==============================
+   Цвета и переменные
+   ============================== */
+:root {
+    --primary-color: #2c2c2c; /* асфальтовый */
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --white: #ffffff;
+    --light-bg: #f8f9fa;
+    --shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
